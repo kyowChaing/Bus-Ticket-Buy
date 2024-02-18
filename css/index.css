@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav bar */
+.navbar{
+    max-width:1171px;
+    margin: 0 auto;
+}
+.bus{
+    color: rgb(29, 209, 0);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* banner */
+.banner{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1171px;
+    height: 550px;
+}
+.bannerText{
+    position: relative;
+        margin-top: 70px;
+}
+.bannerText h3{
+    font-family: Raleway;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 86px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.bannerText h4{
+    font-family: Raleway;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 86px;
+    text-align: center;
+    color: rgb(29, 209, 0);
+}
+.bannerText p{
+    width: 691px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+#byTickets{
+    position: absolute;
+    left: 250px;
+    top: 270px;
+    width: 170px;
+    height: 65px;
+    padding: 21px 30px 21px 30px;
+    border-radius: 12px;
+    background: rgb(29, 209, 0);
+    color: rgb(3, 7, 18);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* Social Info */
+.social{
+    position: absolute;
+    bottom: -75px;
+    left: 100px;
+}
+.socialInfo{
+    width: 308px;
+    height: 138px;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(29, 209, 0);
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+}
+.socialInfo h3{
+    color: rgb(3, 7, 18);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.socialInfo h4{
+    color: rgba(3, 7, 18, 0.6);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+   
+}
+/* off section */
+.bestOffer{
+    margin-top: 189px;
+    margin-bottom: 48px;
+    color: rgb(3, 7, 18);
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
+}
+.offerSection{
+    margin: 0 auto;
+    max-width: 1171px;
+   
+}
+.off15{
+    width: 573px;
+    height: 220px;
+    border-radius: 24px;
+    background: rgb(255, 191, 15);
+    margin-right: 24px;
+}
+.offDetails{
+    width: 216px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+   
+}
+.offDetails h3{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color:rgba(3, 7, 18, 0.8)
+
+}
+.offDetailsP1{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color:rgba(3, 7, 18, 0.8);
+}
+
+.offDetailsP2{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+   color: rgba(3, 7, 18, 0.5)
+}
+
+.offCoupon{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.offCoupon h3{
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: rgb(3, 7, 18);
+}
+.offCoupon p{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(3, 7, 18, 0.4);
+   
+}
+.off20{
+    width: 573px;
+    height: 220px;
+    border-radius: 24px;
+    background: rgb(247, 140, 156);
+}
+
+.seeAllOffer{
+    width: 188px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(29, 209, 0);
+    border-radius: 12px;
+    margin: 60px 0 120px 490px;
+}
+.seeAllOffer button{
+    color: rgb(29, 209, 0);
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* booking seat */
+.booking{
+    box-sizing: border-box;
+    border-top: 2px solid rgb(29, 209, 0);
+    border-radius: 88px 88px 0px 0px;
+    background: rgb(247, 248, 248);
+}
+.paribahan h3{
+    margin-top: 120px;
+    color: rgb(3, 7, 18);
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.paribahan p{
+    margin:24px 0 47px 0;
+    color: rgba(3, 7, 18, 0.6);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    width: 736px;
+}
+
+
+.busName{
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    max-width: 1170px;
+    max-height: 418px;
+    margin: 0 auto;
+}
+
+#seatsLeft{
+    margin: 5px;
+}
+.greenlineP{
+    width: 312px;
+    height: 72px;
+}
+.greenlineP h3{
+    color: rgb(3, 7, 18);
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+.greenlineP p{
+    color: rgba(3, 7, 18, 0.6);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+.seatsLeft{
+    width: 180px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(29, 209, 0, 0.15);
+}
+.seatsLeft p{
+    color: rgb(29, 209, 0);
+    text-align: center;
+}
+
+
+.routeTime{
+    width: 808px;
+    height: 258px;
+    border-radius: 24px;
+    background: rgb(247, 248, 248);
+}
+.routeTime h3{
+    color: rgba(3, 7, 18, 0.6);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+}
+.routeTime p{
+    color: rgb(3, 7, 18);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+}
+
+  /* Bookin seat */
+.border{
+    border: 1px dashed rgba(3, 7, 18, 0.2);
+    margin: 24px 0;
+}
+
+#selectYourSeat{
+    width: 1170px;
+    height: 1056px;
+    margin: 0 auto;
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+}
+.seatContain ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seatContain ul span{
+    margin-left: 32px;
+}
+.seatContain button{
+    width: 110px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgb(247, 248, 248);
+    margin: 10px 15px;
+}
+
+
+.seatName{
+    width: 110px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgb(247, 248, 248);
+    margin: 10px 15px;
+}   
+
+.border3{
+    border: 2px dashed rgba(3, 7, 18, 0.3) ;
+}
+
+/* <!-- Right Side --> */
+.bookingDetails{
+    max-width: 433px ;
+}
+#bookingSeat{
+    max-width: 650px;
+}
+.bookingSeatDetails{
+    width: 433px;
+    height: 335px;
+    border-radius: 12px;
+    background: rgb(247, 248, 248);
+}
+#applyBtn{
+    border-radius: 8px;
+    background: rgb(29, 209, 0);
+    width: 80px;
+    height: 40px;
+    color:rgb(255, 255, 255);
+}

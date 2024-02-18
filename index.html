@@ -9,35 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- Nav section -->
-    <!-- <nav class="flex justify-between">
-        <div>
-            <h2>P-Ticket</h2>
-        </div>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Destination</a></li>
-                <li><a href="">Search</a></li>
-
-            </ul>
-        </div>
-        <div>
-            
-        </div>
-    </nav> -->
-
-
     <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
@@ -56,21 +40,292 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+          <a class="btn"><span class="bus">Bus</span><img src="images/bus-icon.png" alt=""></a>
         </div>
       </div>
 
+<!-- banner section -->
+    <div class="banner bg-[url('./images/banner.png')] bg-no-repeat bg-cover">
+        <div class="flex justify-center items-center ">
+            <div class="bannerText">
+                <h3>End-to-End Travel With
+                <h4>P Paribahan</h4>
+                <p> Yes, you can run unit tests and view the results directly within the app.The 
+                    Integrated testing features allow for a streamlined.
+                </p>
+                <button id="byTickets" class="" type="button">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="flex social gap-6">
+            <div class="socialInfo flex justify-center items-center gap-3">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h3>500K+</h3>
+                    <h4>Registered Users</h4>
+                </div>
+            </div>
+            <div class="socialInfo flex justify-center items-center gap-3">
+                <img src="images/ticket_cupon.png" alt="">
+                <div>
+                    <h3>500K+</h3>
+                    <h4>Registered Users</h4>
+                </div>
+            </div>
+            <div class="socialInfo flex justify-center items-center gap-3">
+                <img src="images/stoppage.png" alt="">
+                <div>
+                    <h3>500K+</h3>
+                    <h4>Registered Users</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
+    <!-- Best offers for you -->
+    <div class="offerSection">
+        <h3 class="bestOffer">Best offers for you</h3>
+        <div class="flex ">
+            <div class="off15 flex justify-center items-center">
+                <div class="offDetails">
+                    <h3>15%OFF</h3>
+                    <p class="offDetailsP1">on your next purchase</p>
+                    <p class="offDetailsP2">use by January 2024</p>
+                </div>
+                <img src="images/cupon-devider.png" alt="">
+                <div class="offCoupon">
+                    <h3>NEW15</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+            <div class="off20 flex justify-center items-center">
+                <div class="offDetails">
+                    <h3>20%OFF</h3>
+                    <p class="offDetailsP1">on your next purchase</p>
+                    <p class="offDetailsP2">use by January 2024</p>
+                </div>
+                <img src="images/cupon-devider.png" alt="">
+                <div class="offCoupon">
+                    <h3>Couple 20</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="seeAllOffer ">
+            <button>See All Offers</button>
+        </div>
+
+    </div>
+
+    <!-- booking section -->
+    <main class="booking">
+        <div class="flex justify-center">
+            <div class="paribahan">
+                <h3>P.H Paribahan</h3>
+                <p>
+                    Yes, you can run unit tests and view the results directly within the app. The 
+                    Integrated testing features allow for a streamlined.
+                </p>
+            </div>
+        </div>
+<!-- Greenline Paribhan Bus Details -->
+        <div class="busName flex">
+            <div>
+                <div class="flex justify-between w-[808px] h-[72px] m-8">
+                    <div class="flex gap-2">
+                        <img class="h-[48px] w-[69]" src="images/bus_logo.png" alt="">
+                        <div class="greenlineP">
+                            <h3>Greenline Paribahan</h3>
+                            <p>Coach-009-WEB!AC_Business</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 seatsLeft justify-center items-center">
+                        <img src="images/seat_green.png" alt="">
+                        <p><span id="seatsLeft">40</span>Seats left</p>
+                    </div>
+                </div>
+                
+                <div class="routeTime">
+                    <div class="flex justify-between">
+                        <h3>Route</h3>
+                        <p>Dhaka-Sylhet</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="flex justify-between">
+                        <h3>Departure Time</h3>
+                        <p>9.00 PM</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="flex justify-between ">
+                        <p>Boarding Point-Laxmipur</p>
+                        <p>Dropping Point-Bogura</p>
+                        <p>Est. Time-11 Hour</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/info-devider.png" alt="">
+            <div>
+                <img src="images/fare.png" alt="">
+                <p>550 Taka</p>
+                <p>Per Seat</p>
+                
+            </div>
+        </div>
+
+        <!-- Select Your Seat -->
+        
+        <div id="selectYourSeat" class="flex gap-8 justify-between">
+            <!-- Left Side -->
+                <div>
+    
+                </div>
+       
+                <div class="seatContain ">
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="A1" class="seatName"  type="button">A1</button></li>
+                        <li> <button id="A1" class="seatName"  type="button">A2</button></li>
+                        <li> <button id="A1" class="seatName"  type="button">A3</button></li>
+                        <li> <button id="A1" class="seatName"  type="button">A4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>B</span></li>
+                        <li> <button id="b1" class="seatName"  type="button">B1</button></li>
+                        <li> <button id="b1" class="seatName"  type="button">B2</button></li>
+                        <li> <button id="b1" class="seatName"  type="button">B3</button></li>
+                        <li> <button id="b1" class="seatName"  type="button">B4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="c1" class="seatName"  type="button">C1</button></li>
+                        <li> <button id="c1" class="seatName"  type="button">C2</button></li>
+                        <li> <button id="c1" class="seatName"  type="button">C3</button></li>
+                        <li> <button id="c1" class="seatName"  type="button">C4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="d1" class="seatName"  type="button">D1</button></li>
+                        <li> <button id="d1" class="seatName"  type="button">D2</button></li>
+                        <li> <button id="d1" class="seatName"  type="button">D3</button></li>
+                        <li> <button id="d1" class="seatName"  type="button">D4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="e1" class="seatName"  type="button">E1</button></li>
+                        <li> <button id="e1" class="seatName"  type="button">E2</button></li>
+                        <li> <button id="e1" class="seatName"  type="button">E3</button></li>
+                        <li> <button id="e1" class="seatName"  type="button">E4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="f1" class="seatName"  type="button">F1</button></li>
+                        <li> <button id="f1" class="seatName"  type="button">F2</button></li>
+                        <li> <button id="f1" class="seatName"  type="button">F3</button></li>
+                        <li> <button id="f1" class="seatName"  type="button">F4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="g1" class="seatName"  type="button">G1</button></li>
+                        <li> <button id="g1" class="seatName"  type="button">G2</button></li>
+                        <li> <button id="g1" class="seatName"  type="button">G3</button></li>
+                        <li> <button id="g1" class="seatName"  type="button">G4</button></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><span>H</span></li>
+                        <li> <button id="h1" class="seatName"  type="button">H1</button></li>
+                        <li> <button id="h1" class="seatName"  type="button">H2</button></li>
+                        <li> <button id="h1" class="seatName"  type="button">H3</button></li>
+                        <li> <button id="h1" class="seatName"  type="button">H4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="i1" class="seatName"  type="button">I1</button></li>
+                        <li> <button id="i1" class="seatName"  type="button">I2</button></li>
+                        <li> <button id="i1" class="seatName"  type="button">I3</button></li>
+                        <li> <button id="i1" class="seatName"  type="button">I4</button></li>
+                    </ul>
+                    <ul>
+                        <li><span>A</span></li>
+                        <li> <button id="j1" class="seatName"  type="button">J1</button></li>
+                        <li> <button id="j2" class="seatName"  type="button">J2</button></li>
+                        <li> <button id="j3" class="seatName"  type="button">J3</button></li>
+                        <li> <button id="j4" class="seatName"  type="button">J4</button></li>
+                    </ul>
+                </div>
+            
+            <!-- border -->
+            <div class="border3"></div>
+            <!-- Right Side -->
+            <div class="bookingDetails">
+                <p>Select Your Seat</p>
+                <div class="border"></div>
+                <!--  -->
+                <div class="bookingSeatDetails overflow-x-auto">
+                    <table class="table">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                        
+                          <th>Seat</th>
+                          <th>Class</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr class="bg-base-200">
+                    
+                          <td></td>
+                          <td>Economoy</td>
+                          <td>550</td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td>C3</td>
+                            <td>Economoy</td>
+                            <td>550</td>
+                        </tr>
+       
+                      </tbody>
+                      
+                    </table>
+                    <div>
+                        <div class="flex justify-between">
+                            <p>Total Price</p>
+                            <p>BDT <span id="totalPrice">0</span></p>
+                        </div>
+                        <div class="flex justify-between"> <input id="couponCode" type="text" placeholder="Have any coupon?">
+                                <button id="applyBtn" disabled>Apply</button>
+                        </div>
+                        <div class="flex justify-between ">
+                            <p>Grand Total</p>
+                            <p>BDT <span id="grandTotal">0</span></p>
+                        </div>
+                    </div>
+                    
+                  </div>
 
 
-    <section class="">
+                <form action="" method="">
+                    <label for="fname">Passenger Name*</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br>
+                    <label for="lname">Phone Number*</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your phone number" required><br>
+                    <label for="email">Email ID*</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ente your email id" required><br>
+                </form>
+                <button > Next</button>
+                <div class="flex justify-between">
+                    <p>Terms and Conditions</p>
+                    <p>Cancellation Policy</p>
+                </div>
+            </div>
+        </div>
+       
 
-    </section>
-    <main>
-        <section>
-
-        </section>
     </main>
 
 
