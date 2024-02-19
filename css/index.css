@@ -354,3 +354,24 @@
     height: 40px;
     color:rgb(255, 255, 255);
 }
+
+/* right side */
+.confirm input{
+    width: 433px;
+    height: 64px;
+    margin: 20px 0;
+}
+.formSummit{
+    width: 433px;
+    height: 65px;
+    border-radius: 16px;
+    background: rgb(247, 248, 248);
+    /* background: rgb(29, 209, 0);
+    color: rgb(255, 255, 255); */
+    /* font-family: Raleway;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center; */
+}
