@@ -199,6 +199,8 @@
 
 
 /* booking seat */
+
+
 .booking{
     box-sizing: border-box;
     border-top: 2px solid rgb(29, 209, 0);
@@ -356,22 +358,30 @@
 }
 
 /* right side */
+
+.setQuqntity{
+    border-radius: 5px;
+    background: rgb(29, 209, 0);
+    width: 24px;
+    height: 13px;
+    display: inline-block;
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
 .confirm input{
     width: 433px;
     height: 64px;
     margin: 20px 0;
 }
-.formSummit{
+.fsummit{
     width: 433px;
     height: 65px;
     border-radius: 16px;
     background: rgb(247, 248, 248);
-    /* background: rgb(29, 209, 0);
-    color: rgb(255, 255, 255); */
-    /* font-family: Raleway;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 23px;
-    letter-spacing: 0px;
-    text-align: center; */
+
 }
+

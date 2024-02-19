@@ -166,12 +166,14 @@
                 </div>
             </div>
             <img src="./images/info-devider.png" alt="">
-            <div>
-                <img src="images/fare.png" alt="">
-                <p>550 Taka</p>
-                <p>Per Seat</p>
-                
+            <div class="flex justify-center items-center w-full">
+                <div>
+                    <img src="images/fare.png" alt="">
+                    <p>550 Taka</p>
+                    <p>Per Seat</p>
+                </div>
             </div>
+           
         </div>
 
         <!-- Select Your Seat -->
@@ -268,7 +270,7 @@
                       <!-- head -->
                       <thead>
                         <tr>
-                          <th>Seat</th>
+                          <th>Seat <span class="setQuqntity">0</span></th>
                           <th>Class</th>
                           <th>Price</th>
                         </tr>
@@ -295,14 +297,14 @@
                   </div>
 
 
-                <form class="confirm mt-6" action="" method="">
+                <form id="summitForm" class="confirm mt-6" >
                     <label  for="fname">Passenger Name*</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br>
                     <label for="lname">Phone Number*</label><br>
                     <input type="text" id="phoneNmb" name="lname" placeholder="Enter your phone number" required><br>
                     <label for="email">Email ID*</label><br>
                     <input type="email" id="email" name="email" placeholder="Ente your email id" required><br>
-                    <button class="formSummit" disabled> Next</button>
+                    <button id="summit" class="fsummit"  disabled> Next</button>
                 </form>
                 
                 <div class="flex justify-between mt-[24px]">
@@ -311,9 +313,37 @@
                 </div>
             </div>
         </div>
-       
-
     </main>
+
+    <footer class=" bg-black">
+        <div class="m-auto max-w-[1170px] max-h-[217]">
+            <div class="flex justify-between">
+                <div>
+                    <h3>P-Tecket</h3>
+                    <p>P-Ticket is digital platform to make your
+                        daily commuting better
+                    </p>
+                </div>
+    
+                <div>
+                    <h3>Download Our App</h3>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="flex justify-between">
+                <div>
+                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 
 
     <script src="js/index.js"></script>

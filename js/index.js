@@ -27,15 +27,16 @@ listItems.forEach(function(item) {
       // console.log(item.id)
       let seatId=item.id;
       // console.log('You clicked: ' + item.textContent);
-      count++;
+      
 
       totalPrice(price);
       price=price+price;
       
       item.disabled=true;
-      bookingDetails(seatId);
+      bookingDetails(seatId,count);
       discountPrice();
       confirmBooking(count);
+      count++;
 
     } else {
       window.alert('You already Book Four Seats');
@@ -48,7 +49,7 @@ listItems.forEach(function(item) {
 
 
 // Booking Details
-function bookingDetails(seatId){
+function bookingDetails(seatId,count){
   const bookingDetails=`
   <tr class="bg-base-200">
   <td>${seatId}</td>
@@ -57,6 +58,8 @@ function bookingDetails(seatId){
   </tr>`
   const booking = document.getElementById('bookingdata');
   booking.insertAdjacentHTML('afterbegin',bookingDetails);
+  document.querySelector('.setQuqntity').innerText=count;
+  
 }
 
 //Total Price
@@ -101,26 +104,35 @@ function discountPrice(){
 
 // confirm booking 
 function confirmBooking(count){
-  console.log('call confirm booking')
+  
   let number= document.getElementById('phoneNmb');
-  let mobileNumber
+  console.log(number)
+  let mobileNumber;
+  let confirmBtn;
   number.addEventListener('input',function(event){
    mobileNumber=event.target.value;
-  });
-  console.log(`value of mobile ${mobileNumber}`)
-
-  if(count=>1 && mobileNumber.length>=11){
-    let confirmBtn=document.querySelector('.formSummit');
-    // console.log(confirmBtn)
-
+   if(count=>1 && mobileNumber.length>=11){
+     confirmBtn =document.getElementById('summit');
+    
     confirmBtn.disabled=false;
-    // confirmBtn.classList='text-[#ffffff]';
-    // confirmBtn.style.backgroundColor='rgb(29, 209, 0)';
-
-    confirmBtn.addEventListener('click',function(){
-          //pope up window
-          window.alert('welcome');
-    })
+    confirmBtn.style.color='text-[#ffffff]';
+    confirmBtn.style.backgroundColor='rgb(29, 209, 0)';
+    
   }
+  // confirmBtn.addEventListener('click',function(){
+  //         //pope up window
+  //         // window.alert('welcome');
+  //         number.value='';
+  //         confirmBtn.disabled=true;
+  //   })
+  });
+
+
 
 }
+
+document.getElementById('summitForm').addEventListener('submit',(e)=>{
+  e.preventDefault();
+  console.log('hi')
+  
+})
