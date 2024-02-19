@@ -106,12 +106,11 @@ function discountPrice(){
 function confirmBooking(count){
   
   let number= document.getElementById('phoneNmb');
-  console.log(number)
   let mobileNumber;
   let confirmBtn;
   number.addEventListener('input',function(event){
    mobileNumber=event.target.value;
-   if(count=>1 && mobileNumber.length>=11){
+   if(count >=1 && mobileNumber.length>=11){
      confirmBtn =document.getElementById('summit');
     
     confirmBtn.disabled=false;
@@ -121,6 +120,8 @@ function confirmBooking(count){
   }
   });
 }
+
+
 
 document.getElementById('summitForm').addEventListener('submit',(e)=>{
   e.preventDefault();
