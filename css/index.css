@@ -385,3 +385,38 @@
 
 }
 
+
+
+/* for popup */
+.popup{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    max-width: 718px;
+    max-height: 481px;
+    top: 500px;
+    left: -500px;
+    visibility: hidden;
+    
+    
+}
+
+.popupimg{
+    width: 100px;
+    height: 97.88px;
+}
+.popupP{
+    width: 561px;
+    height: 92px;
+}
+
+.popupBtn{
+    width: 300px;
+    height: 55.99px;
+    border-radius: 32px;
+    background: rgb(39, 174, 96);
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -119,20 +119,24 @@ function confirmBooking(count){
     confirmBtn.style.backgroundColor='rgb(29, 209, 0)';
     
   }
-  // confirmBtn.addEventListener('click',function(){
-  //         //pope up window
-  //         // window.alert('welcome');
-  //         number.value='';
-  //         confirmBtn.disabled=true;
-  //   })
   });
-
-
-
 }
 
 document.getElementById('summitForm').addEventListener('submit',(e)=>{
   e.preventDefault();
-  console.log('hi')
-  
+  document.getElementById('popupSuccess').style.visibility='visible';
+  let btn=document.getElementById('summit')
+  btn.disabled=true;
+  btn.style.backgroundColor='rgb(247, 248, 248)';
+  document.getElementById('fname').value='';
+  document.getElementById('phoneNmb').value='';
+  document.getElementById('email').value='';
+
 })
+
+document.getElementById('closePopup').addEventListener('click',e=>{
+  document.getElementById('popupSuccess').style.visibility='hidden';
+  location.reload();
+})
+
+
