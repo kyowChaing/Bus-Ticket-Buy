@@ -178,13 +178,25 @@
 
         <!-- Select Your Seat -->
         
+        
         <div id="selectYourSeat" class="flex gap-8 justify-between">
             <!-- Left Side -->
-                <div>
-    
-                </div>
        
                 <div class="seatContain ">
+                    <div>Select Your Seat </div>
+                    <div class="border"></div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="images/seat_gray.png" alt="">
+                            <span>Available</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="images/seat_green.png" alt="">
+                            <span> Selected</span>
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="flex justify-end mr-10 "><img class="h-6 w-6 bg-slate-300" src="images/drivingwheel.svg" alt=""></div>
                     <ul>
                         <li><span>A</span></li>
                         <li> <button id="A1" class="seatName"  type="button">A1</button></li>
@@ -275,26 +287,30 @@
                           <th>Price</th>
                         </tr>
                       </thead>
+                     
                       <tbody id="bookingdata">
-       
+
                       </tbody>
-                      
+                    
                     </table>
+                    
+                    <hr>
                     <div>
-                        <div class="flex justify-between">
+                        <div class="m-5 flex justify-between">
                             <p>Total Price</p>
                             <p>BDT <span id="totalPrice">0</span></p>
                         </div>
-                        <div class="flex justify-between"> <input id="couponCode" type="text" placeholder="Have any coupon?">
+                        
+                        <div class="m-auto flex justify-between h-[56px] w-[369px]"> <input id="couponCode" type="text" placeholder="Have any coupon?">
                                 <button id="applyBtn" disabled>Apply</button>
                         </div>
-                        <div class="flex justify-between ">
+                        <div class="m-5 flex justify-between ">
                             <p>Grand Total</p>
                             <p>BDT <span id="grandTotal">0</span></p>
                         </div>
                     </div>
                     
-                  </div>
+                </div>
 
 
                 <form id="summitForm" class="confirm mt-6" >
@@ -309,15 +325,17 @@
 
                 <!-- for popup -->
                
-                <div id="popupSuccess" class="absolute popup flex flex-col justify-center items-center">
-                    <img class="popupimg" src="images/success.png" alt="">
-                    <h3>SUCCESS</h3>
-                    <p class="popupP">
-                        Thank you for Booking Our Bus Seats. 
-                        We are working hard to find the best service and deals for you. 
-                        Shortly you will find a confirmation in your email.
-                    </p>
-                    <button id="closePopup" class="popupBtn"> Continue</button>
+                <div id="popupSuccess" class="absolute popup ">
+                    <div class="max-w-[718px] max-h-[481px] flex flex-col justify-center items-center bg-[#FFFFFF] p-14  ">
+                        <img class="popupimg" src="images/success.png" alt="">
+                        <h3 class="text-emerald-500 p-3 font-bold">SUCCESS</h3>
+                        <p class="popupP">
+                            Thank you for Booking Our Bus Seats. 
+                            We are working hard to find the best service and deals for you. 
+                            Shortly you will find a confirmation in your email.
+                        </p>
+                        <button id="closePopup" class="popupBtn"> Continue</button>
+                    </div>
                 </div>
                 <!-- popup end -->
 

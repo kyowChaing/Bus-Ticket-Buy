@@ -390,14 +390,11 @@
 /* for popup */
 .popup{
     border-radius: 16px;
-    background: rgb(255, 255, 255);
+    background: #F2F1F1;
     position: absolute;
-    max-width: 718px;
-    max-height: 481px;
     top: 500px;
     left: -500px;
-    visibility: hidden;
-    
+    visibility: hidden;   
     
 }
 
